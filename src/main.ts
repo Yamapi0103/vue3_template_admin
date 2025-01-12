@@ -7,5 +7,6 @@ import zhTW from 'element-plus/es/locale/lang/zh-tw'
 const app = createApp(App).use(ElementPlus, {
   locale: zhTW,
 })
-console.log(import.meta.env)
+
+import 'virtual:svg-icons-register'
 app.mount('#app')
