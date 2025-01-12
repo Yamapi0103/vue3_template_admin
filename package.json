@@ -11,7 +11,9 @@
     "fix": "eslint src --fix",
     "format": "prettier --write \"./**/*.{html,vue,ts.js,ts,json,md}\"",
     "prepare": "husky install",
-    "preinstall": "node scripts/preinstall.js"
+    "preinstall": "node scripts/preinstall.js",
+    "build:test": "vue-tsc && vite build --mode test",
+    "build:prod": "vue-tsc && vite build --mode production"
   },
   "dependencies": {
     "@element-plus/icons-vue": "^2.3.1",
