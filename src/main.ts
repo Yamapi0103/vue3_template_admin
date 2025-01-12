@@ -23,7 +23,7 @@ axios({
   data: {
     username: 'admin',
     password: '123456',
-  }
+  },
 })
 
 app.mount('#app')
