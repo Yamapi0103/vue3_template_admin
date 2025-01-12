@@ -13,4 +13,6 @@ import 'virtual:svg-icons-register'
 import globalComponents from '@/components'
 app.use(globalComponents)
 
+import '@/styles/index.scss'
+
 app.mount('#app')
