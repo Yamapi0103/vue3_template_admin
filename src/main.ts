@@ -9,4 +9,8 @@ const app = createApp(App).use(ElementPlus, {
 })
 
 import 'virtual:svg-icons-register'
+
+import globalComponents from '@/components'
+app.use(globalComponents)
+
 app.mount('#app')
