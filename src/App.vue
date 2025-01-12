@@ -1,16 +1,25 @@
 <template>
   <div>
-    <h1>svg test</h1>
-    <svg-icon name="phone" color="pink" width="100px" height="100px"></svg-icon>
-    <pagination></pagination>
+    <h1>test axios test</h1>
   </div>
 </template>
 
-<script setup lang="ts"></script>
-<style scoped lang="scss">
-div {
-  h1 {
-    color: $base-color;
-  }
-}
-</style>
+<script setup lang="ts">
+import request from '@/utils/request'
+import { onMounted } from 'vue'
+
+onMounted(() => {
+  request({
+    url: '/user/login',
+    method: 'post',
+    data: {
+      username: 'admin',
+      password: '123456',
+    },
+  }).then((res) => {
+    console.log(res)
+  })
+})
+</script>
+
+<style scoped></style>
