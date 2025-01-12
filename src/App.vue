@@ -20,10 +20,9 @@
 </template>
 
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
+import HelloWorld from '@/components/HelloWorld.vue'
 import { Plus } from '@element-plus/icons-vue'
 import { ref } from 'vue'
-
 
 const currentPage1 = ref(5)
 </script>
