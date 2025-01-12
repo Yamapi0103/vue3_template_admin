@@ -2,29 +2,25 @@ function createUserList() {
   return [
     {
       userId: 1,
+      avatar:
+        'https://wpimg.wallstcn.com/f778738c-e4f8-11e8-977b-73845b8cc4bb.jpg',
       username: 'admin',
       password: '123456',
-      nickname: '管理员',
-      roles: ['admin'],
+      desc: '超级管理员',
       buttons: ['cuser.detail'],
       routes: ['home'],
       token: 'Admin Token',
-      avatar:
-        'https://wpimg.wallstcn.com/f778738c-e4f8-11e8-977b-73845b8cc4bb.jpg',
-      desc: '超级管理员',
     },
     {
       userId: 2,
-      username: 'test',
-      password: '123456',
-      nickname: '测试',
-      roles: ['test'],
-      buttons: ['cuser.detail'],
-      routes: ['home'],
-      token: 'Test Token',
       avatar:
         'https://wpimg.wallstcn.com/f778738c-e4f8-11e8-977b-73845b8cc4bb.jpg',
-      desc: '测试用户',
+      username: 'system',
+      password: '123456',
+      desc: '系统管理员',
+      buttons: ['cuser.detail', 'cuser.user'],
+      routes: ['home'],
+      token: 'System Token',
     },
   ]
 }
